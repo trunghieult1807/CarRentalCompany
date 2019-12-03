@@ -6,15 +6,18 @@
 
 using namespace std;
 
-class Contract {
+
+
+class Contract:public Customer {
 	string _rentingDay;
 	string _expireDay;
 
 	string _ensuranceInformation;
-	Customer* _customer;
+	Customer* _client;
 	Vehicle* _vehicle;
 public:
 	void getCustomerBankAccount();
 	void generateBill();
 };
+
 

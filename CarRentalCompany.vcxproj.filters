@@ -53,5 +53,11 @@
     <ClInclude Include="JSON\rapidjson\include\rapidjson\rapidjson.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BookAndRent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CarRentalManagement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

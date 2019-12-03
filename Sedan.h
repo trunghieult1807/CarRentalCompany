@@ -22,7 +22,15 @@ void Sedan::maintain() {
 	ServiceTires* serviceTires = new ServiceTires();
 	double currMileage = getCurrMileage();
 	if (currMileage >= 1000) {
-
+		serviceEngine->oilChange;
+	}
+	if (currMileage >= 5000) {
+		serviceTransmission->changeFluid;
+		serviceTransmission->overhaul;
+	}
+	if (currMileage >= 10000) {
+		serviceTires->adjustTire();
+		serviceTires->replaceTire();
 	}
 }
 

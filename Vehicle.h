@@ -7,6 +7,7 @@
 using namespace std;
 
 class Vehicle {
+protected:
 	int _quantity;
 	double _price;
 	string _status;
@@ -17,14 +18,33 @@ class Vehicle {
 public:
 	void setBrand(string);
 	string getBrand();
-	void setModel(string);
-	string getModel();
 	double getCurrMileage() {
 		return _mileage;
 	}
-	virtual void serviceEngine() = 0;
-	virtual void serviceTransmission() = 0;
-	virtual void serviceTires() = 0;
+	void setMileage(double mileage) {
+		_mileage = mileage;
+	}
+	double getMileage() {
+		return _mileage;
+	}
+	void resetMileage() {
+		_mileage = 0;
+	}
+	void setPrice(double price) {
+		_price = price;
+	}
+	double getPrice() {
+		return _price;
+	}
+	void setModel(string model) {
+		_model = model;
+	}
+	string getModel() {
+		return _model;
+	}
+	//virtual void serviceEngine() = 0;
+	//virtual void serviceTransmission() = 0;
+	//virtual void serviceTires() = 0;
 };
 
 void Vehicle::setBrand(string brand) {
@@ -33,9 +53,4 @@ void Vehicle::setBrand(string brand) {
 string Vehicle::getBrand() {
 	return _brand;
 }
-void Vehicle::setModel(string model) {
-	_model = model;
-}
-string Vehicle::getModel() {
-	return _model;
-}
+

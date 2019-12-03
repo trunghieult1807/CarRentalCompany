@@ -128,6 +128,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BookAndRent.h" />
+    <ClInclude Include="CarRentalManagement.h" />
     <ClInclude Include="Contract.h" />
     <ClInclude Include="Customer.h" />
     <ClInclude Include="FleetOfVehicle.h" />

@@ -1,12 +1,16 @@
+#ifndef SERVICE_HISTORY_H
+#define SERVICE_HISTORY_H
+
 #pragma once
 #include <iostream>
 #include <string>
 #include <vector>
 #include "MaintenanceJob.h"
+#include "Vehicle.h"
 
 using namespace std;
 
-class ServiceHistory: public Vehicle {
+class ServiceHistory {
 	string _time;
 	string _instruction;
 	string _lastService;
@@ -14,11 +18,17 @@ class ServiceHistory: public Vehicle {
 	int _size;
 public:
 	void setTime(string);
-	string getTime();
+	string getTime() {
+		return _time;
+	}
 	void setInstruction(string);
-	string getInstruction();
+	string getInstruction() {
+		return _instruction;
+	}
 	void setLastService(string);
-	string getLastService();
+	string getLastService() {
+		return _lastService;
+	}
 	void when();
 	void how();
 };
@@ -34,3 +44,6 @@ void ServiceHistory::setInstruction(string instruction) {
 void ServiceHistory::setLastService(string lastService) {
 	_lastService = lastService;
 }
+
+
+#endif // !SERVICE_HISTORY_H

@@ -1,3 +1,8 @@
+#ifndef CAR_RENTAL_MANAGEMENT_H
+#define CAR_RENTAL_MANAGEMENT_H
+ 
+
+
 #pragma once
 #include <iostream>
 #include <string>
@@ -17,12 +22,8 @@ public:
 	CarRentalManagement() : _carRent(NULL), _fleetOfVehicle(NULL), _bookAndRentList(NULL) {};
 	virtual void showAvailableVehicle();
 };
+#endif // !CAR_RENTAL_MANAGEMENT_H
 
-void CarRentalManagement::showAvailableVehicle() {
-	for (int i = 0; i < _fleetOfVehicle.size(); i++) {
-
-	}
-}
 
 
 

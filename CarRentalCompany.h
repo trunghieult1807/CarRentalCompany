@@ -1,3 +1,6 @@
+#ifndef CAR_RENTAL_MANAGEMENT_H
+#define CAR_RENTAL_MANAGEMENT_H
+
 #pragma once
 #include <iostream>
 #include <string>
@@ -29,3 +32,4 @@ public:
 };
 
 
+#endif
